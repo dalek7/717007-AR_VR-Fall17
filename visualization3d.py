@@ -5,16 +5,15 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 
-dat = np.loadtxt ("out_20170919_010635_555719_pose.txt")
-#dat = np.loadtxt ("out_20170919_010615_996641_pose.txt")
-
+dat = np.loadtxt ("pose/out_20170919_010635_555719_pose.txt")
+#dat = np.loadtxt ("pose/out_20170919_010615_996641_pose.txt")
 
 print dat.shape
 
 x = dat[:,12+1]
 y = dat[:,13+1]
 z = dat[:,14+1]
-print x.shape
+
 x2 = []
 y2 = []
 z2 = []
