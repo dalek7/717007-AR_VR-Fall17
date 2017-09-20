@@ -31,6 +31,7 @@ z2 = np.array(z2)
 print x2.shape
 
 
+# 그림 그리기 시작
 fig = plt.figure()
 ax = fig.gca(projection='3d')
 
