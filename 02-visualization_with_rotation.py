@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 import numpy as np
 import DDUtil
-
+import DDUtilDraw
 #dat = np.loadtxt ("pose/out_20170919_010635_555719_pose.txt")
 #dat = np.loadtxt ("pose/out_20170919_010615_996641_pose.txt")
 
@@ -32,12 +32,14 @@ dat = DDUtil.GetSparseIDX(dat, nJump)
 dat = np.array(dat)
 print('dat.shape (after) =', dat.shape)
 
+# 매 순간 회전, x/y/z 축 Column vectors
 rx = dat[:, 1:4]
 ry = dat[:, 5:8]
 rz = dat[:, 9:12]
 #print(rx[0], ry[0], rz[0])
 print(dat[0])
 
+# Translation (3자유도 위치)
 x = dat[:,12+1]
 y = dat[:,13+1]
 z = dat[:,14+1]
@@ -53,15 +55,8 @@ ax.scatter(x, y, z, c='r', marker='.')
 
 #시작점을 별(*)로 표시
 ax.scatter(x[0], y[0], z[0], c='r', marker='*',  s=100)
-# Column vectors
-g = 0.02
-lines = []
-for i in range(x.shape[0]):
-    ax.plot([x[i], x[i] + g * rx[i, 0]], [y[i], y[i] + g * rx[i, 1]], [z[i], z[i] + g * rx[i, 2]], 'r')
-    ax.plot([x[i], x[i] + g * ry[i, 0]], [y[i], y[i] + g * ry[i, 1]], [z[i], z[i] + g * ry[i, 2]], 'g')
-    ax.plot([x[i], x[i] + g * rz[i, 0]], [y[i], y[i] + g * rz[i, 1]], [z[i], z[i] + g * rz[i, 2]], 'b')
 
-
+DDUtilDraw.DrawAxis(ax, x, y, z, rx, ry, rz, scale= 0.02) # axis 그리기
 
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
@@ -71,3 +66,7 @@ ax.set_aspect('equal')
 
 
 plt.show()
+
+
+
+
