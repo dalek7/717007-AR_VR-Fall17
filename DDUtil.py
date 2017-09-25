@@ -7,3 +7,4 @@ def GetSparseIDX(data_in, nStride):
             data_out.append(data_in[i,:])
 
     return data_out
+

@@ -63,8 +63,6 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 ax.set_aspect('equal')
 
-
-
 plt.show()
 
 
