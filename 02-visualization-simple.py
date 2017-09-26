@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # 717007 한림대학교 AR/VR
+# 20170926
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -20,8 +21,8 @@ deg = 60
 r3 = DDRotation.eulerAnglesToRotationMatrixD([deg, 0,0]) # 각 축별 회전각도 입력
 H3 = DDRotation.makeHomogeneous(r3, t)
 
-print H2
-print r3
+print(H2)
+print(r3)
 
 H0 = np.array(H0)
 H2 = np.array(H2)
