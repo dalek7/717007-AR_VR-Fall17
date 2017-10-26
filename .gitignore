@@ -20,6 +20,11 @@ __MACOSX
 *.depend
 *.layout
 
+#Unity
+Temp/
+_UpgradeReport_Files 
+*Data
+
 
 build/
 Build/
