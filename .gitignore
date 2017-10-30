@@ -25,6 +25,7 @@ Temp/
 _UpgradeReport_Files 
 *Data
 metadata
+*.meta
 
 build/
 Build/
