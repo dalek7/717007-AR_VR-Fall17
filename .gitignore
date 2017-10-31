@@ -38,6 +38,10 @@ obj/
 *.o
 *.obj
 
+*.exe
+*.apk
+
+
 # Precompiled Headers
 *.gch
 *.pch
