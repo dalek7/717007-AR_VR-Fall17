@@ -7,6 +7,7 @@ public class Player1 : MonoBehaviour
 
     public float speed;
     private Rigidbody rb;
+    public AudioSource sound1;
 
     void Start()
     {
@@ -35,4 +36,15 @@ public class Player1 : MonoBehaviour
         rb.AddForce(movement * speed);
 
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            sound1.Play();
+            other.gameObject.SetActive(false);
+            //Destroy(other.gameObject);
+        }
+    }
+
 }
