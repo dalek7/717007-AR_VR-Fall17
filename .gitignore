@@ -26,6 +26,7 @@ _UpgradeReport_Files
 *Data
 metadata
 *.meta
+ShaderCache/
 
 build/
 Build/
