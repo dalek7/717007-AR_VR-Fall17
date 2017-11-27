@@ -42,7 +42,7 @@ obj/
 
 *.exe
 *.apk
-
+*.bin
 
 # Precompiled Headers
 *.gch
