@@ -24,7 +24,7 @@ __MACOSX
 Temp/
 _UpgradeReport_Files 
 *Data
-metadata
+metadata/
 *.meta
 ShaderCache/
 *.log
@@ -63,5 +63,6 @@ ipch/
 Debug/
 Release/
 
+.vs/
 # Python-related
 *.pyc
