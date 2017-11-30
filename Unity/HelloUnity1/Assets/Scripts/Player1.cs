@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player1 : MonoBehaviour
 {
-
+    int cnt1;
+    public Text cntText1;
     public float speed;
     private Rigidbody rb;
     public AudioSource sound1;
@@ -13,12 +15,16 @@ public class Player1 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         speed = 10;
+        cnt1 = 0;
+
+        cntText1.text = "Hello !";
     }
 
 
     void FixedUpdate()
     {
-
+        //cnt1++;
+        //cntText1.text = cnt1.ToString();
 #if UNITY_ANDROID
 		Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
 
@@ -41,6 +47,9 @@ public class Player1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {
+            cnt1++;
+            cntText1.text = "Count: " + cnt1.ToString();
+
             sound1.Play();
             other.gameObject.SetActive(false);
             //Destroy(other.gameObject);
