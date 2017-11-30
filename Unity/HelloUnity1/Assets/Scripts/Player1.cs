@@ -17,7 +17,7 @@ public class Player1 : MonoBehaviour
         speed = 10;
         cnt1 = 0;
 
-        cntText1.text = "Hello !";
+        cntText1.text = "Count: " + cnt1.ToString();
     }
 
 
