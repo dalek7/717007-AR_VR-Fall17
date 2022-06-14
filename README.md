@@ -8,6 +8,14 @@
 ### 02-visualization-simple
 <img src='examples/3d_rotation_degrees_60.svg' width=500/>
 
+### 03-visualization_with_rotation
+Axis 그리기
+<img src='examples/3d_traj_axis_out_20000101_185919_855635_pose.svg' width=500/>
+
+<img src='examples/3d_traj_axis_out_20000101_185953_781812_pose.svg' width=500/>
+
+<img src='examples/3d_traj_axis_out_20000101_190350_166419_pose.svg' width=500/>
+
 
 ## Hello VR
 <img src='Unity/HelloVR/Screenshots/Screenshot_2017-11-28-02-48-11.png' width=800/>

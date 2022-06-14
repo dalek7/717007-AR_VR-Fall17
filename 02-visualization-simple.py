@@ -70,4 +70,5 @@ plt.title(str)
 
 plt.savefig('examples/3d_rotation_degrees_{}.svg'.format(deg))
 plt.savefig('examples/3d_rotation_degrees_{}.png'.format(deg))
+
 plt.show()
