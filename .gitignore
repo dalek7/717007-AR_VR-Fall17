@@ -4,6 +4,7 @@ data/
 MNIST_data/
 temp/
 out*/
+__pycache__
 
 # pycharm
 .idea/
