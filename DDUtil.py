@@ -1,6 +1,6 @@
 # Seung-Chan Kim
 
-def GetSparseIDX(data_in, nStride):
+def get_sparse_idx(data_in, nStride):
     data_out =[]
     for i in range(data_in.shape[0]):
         if i % nStride == 0:

@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 import numpy as np
 
-def DrawAxis(ax, posx, posy, posz, rx, ry, rz, scale=1):
+def draw_axis(ax, posx, posy, posz, rx, ry, rz, scale=1):
     nd = rx.ndim
     if nd==2:
         for i in range(posx.shape[0]):

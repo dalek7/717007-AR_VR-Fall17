@@ -1,6 +1,13 @@
 # Introduction to AR/VR (2017 Fall)
 * 한림대학교 AR/VR의이해 (717007) 과목 수업 보조자료 공간입니다.
 
+## 3D visualization
+### 01-visualization3d
+<img src='examples/3d_traj_out_20170919_010635_555719_pose.svg' width=500/>
+
+### 02-visualization-simple
+<img src='examples/3d_rotation_degrees_60.svg' width=500/>
+
 
 ## Hello VR
 <img src='Unity/HelloVR/Screenshots/Screenshot_2017-11-28-02-48-11.png' width=800/>
